@@ -65,3 +65,7 @@ button {
     background-color: var(--hr-line);
     margin: 1.5rem 0;
   }
+
+a {
+    text-decoration: none;
+}
