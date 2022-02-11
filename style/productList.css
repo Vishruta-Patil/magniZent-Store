@@ -9,7 +9,7 @@
 }
 
 .filter-content-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -24,18 +24,26 @@ hr {
   background-color: black;
 }
 
+.clear-link {
+  text-decoration: underline;
+}
+
+input[type='range'] {
+  color: red;
+}
+
 /* Product Container */
 
 .product-container {
   grid-area: product;
   margin: 3rem 0 3rem 5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5rem;
 }
 
 .product-unit {
-  max-width: 25rem;
+  max-width: 300px;
   box-shadow: var(--mild-shadow);
   padding: 1.5rem;
 }
@@ -79,3 +87,5 @@ hr {
   font-weight: 500;
   font-size: 1.5rem;
 }
+
+

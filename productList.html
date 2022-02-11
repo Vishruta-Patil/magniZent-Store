@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>magniZent Store</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/colors.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/utility.css" />
+    <link rel="stylesheet" href="./style/productList.css" />
+</head>
+
+<body>
+    <div class="product-list-container">
+        <div class="header-container">
+            <div class="header">
+                <div class="logo flex-container flex-center" style="align-items: baseline; gap: 2rem">
+                    <span class="material-icons icon hide-menu"> menu </span>
+                    <h2 class="main-title">
+                        magni<span class="bold-main-title">Z</span>ent
+                    </h2>
+                </div>
+
+                <div class="header-main-content">
+                    <ul class="flex header-inner-container">
+                        <li class="header-item">Home</li>
+                        <li class="header-item primary-color">Shop Now</li>
+                    </ul>
+                </div>
+
+                <div class="search-bar-container search-bar-inline">
+                    <div class="search-bar flex">
+                        <input class="input-search" type="text" placeholder="Search your favorite brand and products" />
+                        <span class="material-icons search-icon flex-center">
+                            search
+                        </span>
+                    </div>
+                </div>
+
+                <div class="icon-container flex">
+                    <div class="icon-unit flex-column flex-center">
+                        <span class="material-icons icon"> login </span>
+                        <p>Login</p>
+                    </div>
+                    <div class="icon-unit flex-column flex-center">
+                        <span class="material-icons icon"> favorite </span>
+                        <p>WishList</p>
+                    </div>
+                    <div class="icon-unit flex-column flex-center">
+                        <span class="material-icons icon"> shopping_cart </span>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="search-bar-container search-bar-block">
+                <div class="search-bar flex-center">
+                    <input class="input-search" type="text" placeholder="Search your favorite brand and products" />
+                    <span class="material-icons search-icon flex-center"> search </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <div class="filter-header flex">
+                <h3 class="primary-color">Filters</h3>
+                <p class="secondary-color clear-link">Clear</p>
+            </div>
+            <hr />
+            
+            <div class="filter-content">
+                <div class="filter-inner-content">
+                    <h3 class="filter-content-title">Price</h3>
+                    <div class="filter-item align-center">
+                        <input type="range" min="1" max="100" value="50">
+                    </div>
+                </div>
+
+                <hr class="rg-line"/>
+
+                <div class="filter-inner-content">
+                    <h3 class="filter-content-title secondary-color">Category</h3>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">Category-1 </label>
+                    </div>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">Category-2 </label>
+                    </div>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">Category-3 </label>
+                    </div>
+                </div>
+
+                <hr class="rg-line"/>
+
+                <div class="filter-inner-content">
+                    <h3 class="filter-content-title secondary-color">Rating</h3>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">4 Stars & above</label>
+                    </div>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">3 Stars & above</label>
+                    </div>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">2 Stars & above</label>
+                    </div>
+                    <div class="filter-item align-center">
+                        <input type="checkbox">
+                        <label for="">1 Stars & above</label>
+                    </div>
+                </div>
+
+                <hr class="rg-line"/>
+                <div class="filter-inner-content">
+                    <h3 class="filter-content-title secondary-color">Sort by</h3>
+                    <div class="filter-item align-center">
+                        <input type="radio">
+                        <label for="">Price - Low to High </label>
+                    </div>
+                    <div class="filter-item align-center">
+                        <input type="radio">
+                        <label for="">Price - High to Low</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-container">
+            <div class="product-unit flex-column">
+                <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
+                <div class="product-unit-header justify-between">
+                    <p class="name-product">Product </p>
+                    <span class="material-icons wishlist-icon"> favorite </span>
+                </div>
+
+                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+                <button class="hero-btn" >Add To Cart</button>
+            </div>
+
+            <div class="product-unit flex-column">
+                <img class="img-product justify-center" src="./assets/card_img3.jpg" alt="">
+                <div class="product-unit-header justify-between">
+                    <p class="name-product">Product </p>
+                    <span class="material-icons wishlist-icon"> favorite </span>
+                </div>
+
+                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+                <button class="hero-btn" >Add To Cart</button>
+            </div>
+
+            <div class="product-unit flex-column">
+                <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
+                <div class="product-unit-header justify-between">
+                    <p class="name-product">Product </p>
+                    <span class="material-icons wishlist-icon"> favorite </span>
+                </div>
+
+                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+                <button class="hero-btn" >Add To Cart</button>
+            </div>
+
+            <div class="product-unit flex-column">
+                <img class="img-product justify-center" src="./assets/card_img5.jpg" alt="">
+                <div class="product-unit-header justify-between">
+                    <p class="name-product">Product </p>
+                    <span class="material-icons wishlist-icon"> favorite </span>
+                </div>
+
+                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+                <button class="hero-btn" >Add To Cart</button>
+            </div>
+
+            <div class="product-unit flex-column">
+                <img class="img-product justify-center" src="./assets/card_img6.jpg" alt="">
+                <div class="product-unit-header justify-between">
+                    <p class="name-product">Product </p>
+                    <span class="material-icons wishlist-icon"> favorite </span>
+                </div>
+
+                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+                <button class="hero-btn">Add To Cart</button>
+            </div>
+
+            <div class="product-unit flex-column">
+                <img class="img-product justify-center" src="./assets/card_laptop.jpg" alt="">
+                <div class="product-unit-header justify-between">
+                    <p class="name-product">Product </p>
+                    <span class="material-icons wishlist-icon"> favorite </span>
+                </div>
+
+                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+                <button class="hero-btn">Add To Cart</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
