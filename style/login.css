@@ -43,7 +43,7 @@
 }
 
 .input-box:focus {
-  outline: none !important;
+  outline: none;
   border: 1px solid var(--primary-color);
   box-shadow: 0 0 5px var(--primary-color);
 }
