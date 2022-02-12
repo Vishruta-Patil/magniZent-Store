@@ -87,3 +87,7 @@ a {
 .black-color {
   color: var(--black-color);
 }
+
+ul {
+list-style-type: none;
+}

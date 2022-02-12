@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>magniZent Store</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/colors.css" />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/utility.css" />
     <link rel="stylesheet" href="./style/productList.css" />
-</head>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
 
-<body>
-    <div class="product-list-container">
+  <body>
+    <div class="main-login-box">
       <div class="header-container">
         <div class="header">
           <div
@@ -81,79 +90,44 @@
         </div>
       </div>
 
-        <div class="filter-container">
-            <div class="filter-header flex">
-                <h3 class="primary-color">Filters</h3>
-                <p class="secondary-color clear-link">Clear</p>
-            </div>
-            <hr />
-            
-            <div class="filter-content">
-                <div class="filter-inner-content">
-                    <h3 class="filter-content-title">Price</h3>
-                    <div class="filter-item align-center">
-                        <input type="range" min="1" max="100" value="50">
-                    </div>
-                </div>
+      <div class="bg-img-container">
+        <img
+          class="hero-bg-img"
+          src="./assets/hero-bg-img.jpg"
+          alt=""
+        />
+        <div class="bg-img-content flex-column flex-center">
+          <h1 class="hero-title"><span class="primary-color hero-segment">S</span>PRING <span class="primary-color hero-segment">S</span>ALE</h1>
+          <p class="hero-sub-title">Upto <span class="price-off-bg">60% off</span> on all the products</p>
+          <a class="shop-now-link" href="./productList.html"><button class="hero-btn shop-now-btn">Shop Now</button></a>
+        </div>
+      </div>
 
-                <hr class="rg-line"/>
-
-                <div class="filter-inner-content">
-                    <h3 class="filter-content-title secondary-color">Category</h3>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">Category-1 </label>
-                    </div>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">Category-2 </label>
-                    </div>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">Category-3 </label>
-                    </div>
-                </div>
-
-                <hr class="rg-line"/>
-
-                <div class="filter-inner-content">
-                    <h3 class="filter-content-title secondary-color">Rating</h3>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">4 Stars & above</label>
-                    </div>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">3 Stars & above</label>
-                    </div>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">2 Stars & above</label>
-                    </div>
-                    <div class="filter-item align-center">
-                        <input type="checkbox">
-                        <label for="">1 Stars & above</label>
-                    </div>
-                </div>
-
-                <hr class="rg-line"/>
-                <div class="filter-inner-content">
-                    <h3 class="filter-content-title secondary-color">Sort by</h3>
-                    <div class="filter-item align-center">
-                        <input type="radio">
-                        <label for="">Price - Low to High </label>
-                    </div>
-                    <div class="filter-item align-center">
-                        <input type="radio">
-                        <label for="">Price - High to Low</label>
-                    </div>
-                </div>
-            </div>
+      <div class="prominent-category">
+        <p class="category-header secondary-color">Prominent Category</p>
+        <div class="category-container">
+          <div class="category-unit flex-center">
+            <img src="./assets/card_camera.jpg" alt="">
+            <p class="category-content">Camera</p>
+          </div>
+          <div class="category-unit flex-center">
+            <img src="./assets/card_img6.jpg" alt="">
+            <p class="category-content">Laptop</p>
+          </div>
+          <div class="category-unit flex-center">
+            <img src="./assets/watch.jpg" alt="">
+            <p class="category-content">Watch</p>
+          </div>
+          <div class="category-unit flex-center">
+            <img src="./assets/tablet.jpg" alt="">
+            <p class="category-content">Tablet</p>
+          </div>
         </div>
 
-
-        <div class="product-container">
-            <div class="product-unit flex-column">
+        <div class="top-products-container">
+          <p class="category-header secondary-color top-product-header">Products of the week</p>
+          <div class="product-container">
+            <div class="product-unit flex-column ">
                 <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
                 <div class="product-unit-header justify-between">
                     <p class="name-product">Product </p>
@@ -200,34 +174,36 @@
                 <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
                 <button class="hero-btn" >Add To Cart</button>
             </div>
-
-            <div class="product-unit flex-column">
-                <img class="img-product justify-center" src="./assets/card_img6.jpg" alt="">
-                <div class="product-unit-header justify-between">
-                    <p class="name-product">Product </p>
-                    <span class="material-icons wishlist-icon"> favorite </span>
-                </div>
-
-                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
-                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
-                <button class="hero-btn">Add To Cart</button>
-            </div>
-
-            <div class="product-unit flex-column">
-                <img class="img-product justify-center" src="./assets/card_laptop.jpg" alt="">
-                <div class="product-unit-header justify-between">
-                    <p class="name-product">Product </p>
-                    <span class="material-icons wishlist-icon"> favorite </span>
-                </div>
-
-                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
-                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
-                <button class="hero-btn">Add To Cart</button>
-            </div>
+        </div>
         </div>
 
-    </div>
-    </div>
-</body>
+      </div>
 
+      <div class="cart-footer flex-center flex-column">
+        <p class="">Made with <i class="fas fa-heart footer-heart-icon"></i> by <a class="footer-linkedin-link" href="http://www.linkedin.com/in/vishruta-patil-30106b204">Vishruta Patil</a></p>
+        <div class="social-links-container">
+          <ul class="flex social-links-inner-container">
+            <li>
+              <a href="https://github.com/Vishruta-Patil" target="_blank"
+                ><i class="fab fa-github footer-social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://www.linkedin.com/in/vishruta-patil-30106b204"
+                target="_blank"
+                ><i class="fab fa-linkedin footer-social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/vishruta_patil" target="_blank"
+                ><i class="fab fa-twitter footer-social-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </body>
 </html>

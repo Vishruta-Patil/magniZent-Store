@@ -1,0 +1,141 @@
+.hero-bg-img {
+  width: 100%;
+  height: 40rem;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.bg-img-container {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-img-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--black-color);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  z-index: 2;
+}
+
+.hero-title {
+  color: var(--black-color);
+  font-size: 6rem;
+}
+
+.hero-segment {
+  font-size: 10rem;
+}
+
+.hero-sub-title {
+  color: var(--black-color);
+  font-size: 3rem;
+}
+
+.shop-now-btn {
+  margin-top: 5rem;
+  width: 30rem;
+  font-size: 2rem;
+  font-weight: 500;
+  box-shadow: var(--box-shadow);
+}
+
+.price-off-bg {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.prominent-category {
+  margin-top: 5rem;
+}
+
+.category-header {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 3rem;
+  gap: 5rem;
+}
+
+.category-unit {
+  position: relative;
+}
+
+.category-unit img {
+  border: 2px solid var(--black-color);
+  border-radius: 7px;
+  opacity: 0.5;
+}
+
+.category-unit img {
+  width: 30rem;
+  object-fit: cover;
+  height: 30rem;
+}
+
+.category-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--black-color);
+  font-weight: bolder;
+}
+
+.top-product-header {
+  margin-top: 10rem;
+}
+
+.cart-footer {
+  margin-top: 7rem;
+  background-color: #d2dadc;
+  color: var(--secondary-color);
+  padding: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer-social-icon {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social-icon:hover {
+  color: var(--primary-color);
+}
+
+.footer-heart-icon {
+  font-size: 2.3rem;
+  color: var(--primary-color)
+}
+
+.footer-linkedin-link {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-segment {
+    font-size: 6rem;
+  }
+
+  .hero-sub-title {
+    font-size: 2.5rem;
+  }
+}
