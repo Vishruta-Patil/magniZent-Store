@@ -47,6 +47,9 @@ html {
   .header-main-content {
     display: none;
   }
+  .filter-container {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
