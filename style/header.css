@@ -13,9 +13,9 @@
 }
 
 .main-title {
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 600;
-  border-bottom: 1px solid var(--secondary-color);
+  /* border-bottom: 1px solid var(--secondary-color); */
 }
 
 .bold-main-title {
@@ -43,7 +43,7 @@
 }
 
 .header-item {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .header-item:hover {
@@ -78,7 +78,7 @@
   flex-grow: 1;
   background-color: var(--white-color);
   color: var(--primary-color);
-  border: 2px solid var(--border);
+  border: 3px solid var(--primary-color);
 }
 
 .search-bar {

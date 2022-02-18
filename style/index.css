@@ -56,7 +56,6 @@
   font-size: 3.5rem;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 3rem;
 }
 
 .category-container {
@@ -66,14 +65,18 @@
   gap: 5rem;
 }
 
+.product-unit {
+  cursor: pointer;
+}
+
 .category-unit {
   position: relative;
+  cursor: pointer;
 }
 
 .category-unit img {
-  border: 2px solid var(--black-color);
+  box-shadow: var(--category-border);
   border-radius: 7px;
-  opacity: 0.5;
 }
 
 .category-unit img {
@@ -87,9 +90,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--black-color);
   font-weight: bolder;
+  opacity: 0;
+}
+
+.category-unit:hover,
+.product-unit:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.category-unit:hover img{
+  opacity: 0.3;
+}
+
+.category-unit:hover .category-content {
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
 }
 
 .top-product-header {
@@ -98,32 +117,39 @@
 
 .cart-footer {
   margin-top: 7rem;
-  background-color: #d2dadc;
-  color: var(--secondary-color);
+  background-color: var(--footer-bg-color);
+  color: var(--white-color);
   padding: 5rem;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .footer-social-icon {
-  color: var(--secondary-color);
-  font-size: 3rem;
+  color: var(--white-color);
+  font-size: 2.5rem;
   margin-top: 1.5rem;
 }
 
 .footer-social-icon:hover {
-  color: var(--primary-color);
-}
-
-.footer-heart-icon {
-  font-size: 2.3rem;
-  color: var(--primary-color)
+  color: var(--secondary-color);
 }
 
 .footer-linkedin-link {
-  color: var(--secondary-color);
-  text-decoration: underline;
+  color: var(--white-color);
   cursor: pointer;
+}
+
+.footer-symbol {
+  font-weight: bolder;
+  color: var(--black-color);
+}
+
+.copywrite-footer {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color)
 }
 
 @media only screen and (max-width: 700px) {
@@ -137,5 +163,14 @@
 
   .hero-sub-title {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width:695px) {
+  .product-container {
+    margin: 2rem;
+  }
+  .product-unit {
+    margin: auto;
   }
 }
