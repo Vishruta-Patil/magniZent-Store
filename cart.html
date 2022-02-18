@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>magniZent Store</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/colors.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/utility.css" />
+    <link rel="stylesheet" href="./style/cart.css" />
+  </head>
+
+  <body>
+    <div class="cart-main-container">
+      <div class="header-container">
+        <div class="header">
+          <div
+            class="logo flex-container flex-center"
+            style="align-items: baseline; gap: 2rem"
+          >
+          <span class="material-icons icon hide-menu"> menu </span>
+          <a class="primary-color" href="./index.html">
+            <h2 class="main-title">
+              magni<span class="bold-main-title">Z</span>ent
+            </h2>
+          </a>
+          </div>
+
+          <div class="header-main-content">
+            <ul class="flex header-inner-container">
+              <a class="secondary-color" href="./index.html"><li class="header-item">Home</li></a>
+              <a href="./productList.html"><p class="header-item primary-color">Shop Now</p></a>
+            </ul>
+          </div>
+
+          <div class="search-bar-container search-bar-inline">
+            <div class="search-bar">
+              <input
+                class="input-search"
+                type="text"
+                placeholder="Search your favorite brand and products"
+              />
+              <span class="material-icons search-icon">
+                search
+              </span>
+            </div>
+          </div>
+
+          <div class="icon-container flex">
+            <div class="icon-unit">
+              <a class="flex-column flex-center secondary-color header-icon" href="./login.html">
+              <span class="material-icons icon"> login </span>
+              <p>Login</p></a>
+            </div>
+            <div class="icon-unit">
+              <a class="flex-column flex-center secondary-color header-icon" href="./wishlist.html">
+                <span class="material-icons icon"> favorite </span>
+              <p>WishList</p></a>
+            </div>
+            <div class="icon-unit">
+              <a class="flex-column flex-center secondary-color header-icon" href="./cart.html">
+                <span class="material-icons icon"> shopping_cart </span>
+              <p>Cart</p></a>
+            </div>
+          </div>
+        </div>
+        <hr class="hr-line header-divider"/>
+        <div class="search-bar-container search-bar-block">
+          <div class="search-bar flex">
+            <input
+              class="input-search"
+              type="text"
+              placeholder="Search your favorite brand and products"
+            />
+            <span class="material-icons search-icon flex-center"> search </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-hero-container">
+        <h2 class="cart-main-header">My Cart (2)</h2>
+
+        <div class="cart-management-box flex">
+          <div class="cart-display-container flex-column">
+            <div class="item-container flex">
+              <div class="product-img-container">
+                <img class="product-img" src="./assets/card_img3.jpg" alt="" />
+              </div>
+              <div class="product-content-container flex-column">
+                <div class="product-cart-title">Apple MacBook Air</div>
+                <div class="price-tag flex">
+                  <div class="price-amount">₹ 83,861</div>
+                  <div class="duplicate-price-amount">₹ 92,900</div>
+                </div>
+                <div class="price-offer">10% off</div>
+                <div class="quantity-container flex">
+                  <p>Quantity:</p>
+                  <button class="quantity-btn">+</button>
+                  <div class="quantity-input flex-center">1</div>
+                  <button class="quantity-btn">-</button>
+                </div>
+                <button class="hero-btn remove-cart-btn">
+                  Remove From Cart
+                </button>
+                <button class="outline-btn add-wishlist-btn">
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+
+            <div class="item-container flex">
+              <div class="product-img-container">
+                <img class="product-img" src="./assets/card_img3.jpg" alt="" />
+              </div>
+              <div class="product-content-container flex-column">
+                <div class="product-cart-title">Apple MacBook Air</div>
+                <div class="price-tag flex">
+                  <div class="price-amount">₹ 83,861</div>
+                  <div class="duplicate-price-amount">₹ 92,900</div>
+                </div>
+                <div class="price-offer">10% off</div>
+                <div class="quantity-container flex">
+                  <p>Quantity:</p>
+                  <button class="quantity-btn">+</button>
+                  <div class="quantity-input flex-center">1</div>
+                  <button class="quantity-btn">-</button>
+                </div>
+                <button class="hero-btn remove-cart-btn">
+                  Remove From Cart
+                </button>
+                <button class="outline-btn add-wishlist-btn">
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-details-container flex-column">
+            <div class="price-details-header">Price Details</div>
+            <hr class="rg-line" />
+            <div class="price-calculation flex-column secondary-color">
+                <div class="total-price-item justify-between">
+                    <p>Price (2 items): </p>
+                    <p>Rs 5000</p>
+                </div>
+                <div class="discount justify-between">
+                    <p>Discount: </p>
+                    <p>- Rs 5000</p>
+                </div>
+                <div class="delivery-charges justify-between">
+                    <p>Delivery charges: </p>
+                    <p>Rs 5000</p>
+                </div>
+            </div>
+            <hr class="rg-line" />
+            <div class="total-amount-box black-color justify-between">
+                <p class="total-amount">Total Amount</p>
+                <p>Rs 5000</p>
+            </div>
+            <hr class="rg-line" />
+            <p class="gen-msg">You will save Rs 1200 on this order</p>
+            <button class="hero-btn place-order-btn">PLace this order</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

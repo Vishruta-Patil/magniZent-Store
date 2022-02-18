@@ -32,10 +32,6 @@
   flex-wrap: wrap;
 }
 
-.primary-color {
-  color: var(--primary-color);
-}
-
 button {
   border: none;
   cursor: pointer;
@@ -55,6 +51,12 @@ button {
   color: var(--white-color);
   font-weight: bold;
 }
+
+.outline-btn:hover,
+.hero-btn:hover {
+  opacity: 0.7;
+}
+
 
 .hr-line {
   height: 1px;
@@ -80,4 +82,12 @@ a {
 
 .primary-color {
     color: var(--primary-color)
+}
+
+.black-color {
+  color: var(--black-color);
+}
+
+ul {
+list-style-type: none;
 }
