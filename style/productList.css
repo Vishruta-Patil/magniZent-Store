@@ -28,7 +28,7 @@ hr {
   text-decoration: underline;
 }
 
-input[type='range'] {
+input[type="range"] {
   color: red;
 }
 
@@ -36,14 +36,14 @@ input[type='range'] {
 
 .product-container {
   grid-area: product;
-  margin: 3rem 0 3rem 5rem;
+  margin: 3rem 2rem 3rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5rem;
 }
 
 .product-unit {
-  max-width: 300px;
+  max-width: 350px;
   box-shadow: var(--mild-shadow);
   padding: 1.5rem;
 }
@@ -83,9 +83,25 @@ input[type='range'] {
   font-weight: bolder;
 }
 
-.hero-btn {
+.btn {
   font-weight: 500;
   font-size: 1.5rem;
+  flex-basis: 50%;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 695px) {
+  .product-container {
+    margin: 2rem auto;
+  }
+  .product-unit {
+    width: 80%;
+    margin: auto;
+    max-width: 400px;
+  }
 }
 
 

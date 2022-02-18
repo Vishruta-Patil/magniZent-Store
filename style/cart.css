@@ -142,6 +142,10 @@
     }
     .price-details-container {
         margin-bottom: 3rem;
+        max-width: 100%;
+    }
+    .product-content-container {
+      max-width: 100%;
     }
 }
 
