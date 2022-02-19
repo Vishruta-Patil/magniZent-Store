@@ -123,9 +123,7 @@
   height: 0.7px;
 }
 
-.hide-menu {
-  display: none;
-}
+
 
 .shop-now-link {
   color: var(--white-color)
@@ -150,15 +148,9 @@
   } 
 }
 
-@media only screen and (max-width: 800px) {
-  .hide-menu {
-    display:block;
-  }
-}
-
 @media only screen and (max-width: 675px) {
   .icon-container {
-    display: none;
+    display: none !important;
   }
 
   .header-main-content {

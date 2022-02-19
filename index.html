@@ -1,212 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>magniZent Store</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="./style/header.css" />
-    <link rel="stylesheet" href="./style/colors.css" />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/utility.css" />
-    <link rel="stylesheet" href="./style/productList.css" />
-    <link rel="stylesheet" href="./style/index.css" />
-  </head>
 
-  <body>
-    <div class="main-login-box">
-      <div class="header-container">
-        <div class="header">
-          <div
-            class="logo flex-container flex-center"
-            style="align-items: baseline; gap: 2rem"
-          >
-          <span class="material-icons icon hide-menu"> menu </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>magniZent Store</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style/header.css" />
+  <link rel="stylesheet" href="./style/colors.css" />
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/utility.css" />
+  <link rel="stylesheet" href="./style/collapseNavbar.css" />
+  <link rel="stylesheet" href="./style/productList.css" />
+  <link rel="stylesheet" href="./style/index.css" />
+</head>
+
+<body>
+  <div class="main-login-box">
+    <div class="header-container">
+      <div class="header">
+        <div class="logo" style="align-items: baseline; gap: 2rem">
+
           <a class="primary-color" href="./index.html">
             <h2 class="main-title">
               magni<span class="bold-main-title">Z</span>ent <span class="bold-main-title secondary-color">
             </h2>
           </a>
-          </div>
 
-          <div class="header-main-content">
-            <ul class="flex header-inner-container">
-              <a class="secondary-color" href="./index.html"><li class="header-item">Home</li></a>
-              <a href="./productList.html"><p class="header-item primary-color">Shop Now</p></a>
-            </ul>
-          </div>
-
-          <div class="search-bar-container search-bar-inline">
-            <div class="search-bar">
-              <input
-                class="input-search"
-                type="text"
-                placeholder="Search your favorite brand and products"
-              />
-              <span class="material-icons search-icon">
-                search
-              </span>
-            </div>
-          </div>
-
-          <div class="icon-container flex">
-            <div class="icon-unit">
-              <a class="flex-column flex-center secondary-color header-icon" href="./login.html">
-              <span class="material-icons icon"> login </span>
-              <p>Login</p></a>
-            </div>
-            <div class="icon-unit">
-              <a class="flex-column flex-center secondary-color header-icon" href="./wishlist.html">
-                <span class="material-icons icon"> favorite </span>
-              <p>WishList</p></a>
-            </div>
-            <div class="icon-unit">
-              <a class="flex-column flex-center secondary-color header-icon" href="./cart.html">
-                <span class="material-icons icon"> shopping_cart </span>
-              <p>Cart</p></a>
-            </div>
-          </div>
-        </div>
-        <hr class="hr-line header-divider"/>
-        <div class="search-bar-container search-bar-block">
-          <div class="search-bar flex">
-            <input
-              class="input-search"
-              type="text"
-              placeholder="Search your favorite brand and products"
-            />
-            <span class="material-icons search-icon flex-center"> search </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-img-container">
-        <img
-          class="hero-bg-img"
-          src="./assets/hero-bg-img.jpg"
-          alt=""
-        />
-        <div class="bg-img-content flex-column flex-center">
-          <h1 class="hero-title"><span class="primary-color hero-segment">S</span>PRING <span class="primary-color hero-segment">S</span>ALE</h1>
-          <p class="hero-sub-title">Upto <span class="price-off-bg">60% off</span> on all the products</p>
-          <a class="shop-now-link" href="./productList.html"><button class="hero-btn shop-now-btn">Shop Now</button></a>
-        </div>
-      </div>
-
-      <div class="prominent-category">
-        <p class="category-header black-color">Prominent Category</p>
-        <div class="underline-header"></div>
-        <div class="category-container">
-          <div class="category-unit flex-center">
-            <img src="./assets/card_camera.jpg" alt="">
-            <p class="category-content">Camera</p>
-          </div>
-          <div class="category-unit flex-center">
-            <img src="./assets/card_img6.jpg" alt="">
-            <p class="category-content">Laptop</p>
-          </div>
-          <div class="category-unit flex-center">
-            <img src="./assets/watch.jpg" alt="">
-            <p class="category-content">Watch</p>
-          </div>
-          <div class="category-unit flex-center">
-            <img src="./assets/tablet.jpg" alt="">
-            <p class="category-content">Tablet</p>
-          </div>
         </div>
 
-        <div class="top-products-container">
-          <p class="category-header black-color top-product-header">Products of the week</p>
-          <div class="underline-header"></div>
-          <div class="product-container">
-            <div class="product-unit flex-column ">
-                <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
-                <div class="product-unit-header justify-between">
-                    <p class="name-product">Product </p>
-                    <span class="material-icons wishlist-icon"> favorite </span>
-                </div>
-
-                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
-                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
-                <button class="hero-btn" >Add To Cart</button>
-            </div>
-
-            <div class="product-unit flex-column">
-                <img class="img-product justify-center" src="./assets/card_img3.jpg" alt="">
-                <div class="product-unit-header justify-between">
-                    <p class="name-product">Product </p>
-                    <span class="material-icons wishlist-icon"> favorite </span>
-                </div>
-
-                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
-                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
-                <button class="hero-btn" >Add To Cart</button>
-            </div>
-
-            <div class="product-unit flex-column">
-                <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
-                <div class="product-unit-header justify-between">
-                    <p class="name-product">Product </p>
-                    <span class="material-icons wishlist-icon"> favorite </span>
-                </div>
-
-                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
-                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
-                <button class="hero-btn" >Add To Cart</button>
-            </div>
-
-            <div class="product-unit flex-column">
-                <img class="img-product justify-center" src="./assets/card_img5.jpg" alt="">
-                <div class="product-unit-header justify-between">
-                    <p class="name-product">Product </p>
-                    <span class="material-icons wishlist-icon"> favorite </span>
-                </div>
-
-                <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
-                <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
-                <button class="hero-btn" >Add To Cart</button>
-            </div>
-        </div>
-        </div>
-
-      </div>
-
-      <div class="cart-footer flex-center flex-column">
-        <p class="">Made with <span class="primary-color footer-symbol"> &lt;/&gt; </span> by <a class="footer-linkedin-link" href="http://www.linkedin.com/in/vishruta-patil-30106b204">Vishruta Patil</a></p>
-        <div class="social-links-container">
-          <ul class="flex social-links-inner-container">
-            <li>
-              <a href="https://github.com/Vishruta-Patil" target="_blank"
-                ><i class="fab fa-github footer-social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="http://www.linkedin.com/in/vishruta-patil-30106b204"
-                target="_blank"
-                ><i class="fab fa-linkedin footer-social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/vishruta_patil" target="_blank"
-                ><i class="fab fa-twitter footer-social-icon"></i
-              ></a>
-            </li>
+        <div class="header-main-content">
+          <ul class="flex header-inner-container">
+            <a class="secondary-color" href="./index.html">
+              <li class="header-item">Home</li>
+            </a>
+            <a href="./productList.html">
+              <p class="header-item primary-color">Shop Now</p>
+            </a>
           </ul>
         </div>
-        <p class="copywrite-footer">© 2022 magniZent</p>
-        
+
+        <div class="search-bar-container search-bar-inline">
+          <div class="search-bar">
+            <input class="input-search" type="text" placeholder="Search your favorite brand and products" />
+            <span class="material-icons search-icon">
+              search
+            </span>
+          </div>
+        </div>
+
+        <div class="flex icon-container">
+          <div class="icon-unit">
+            <a class="flex-column flex-center secondary-color header-icon" href="./login.html">
+              <span class="material-icons icon"> login </span>
+              <p>Login</p>
+            </a>
+          </div>
+          <div class="icon-unit">
+            <a class="flex-column flex-center secondary-color header-icon" href="./wishlist.html">
+              <span class="material-icons icon"> favorite </span>
+              <p>WishList</p>
+            </a>
+          </div>
+          <div class="icon-unit">
+            <a class="flex-column flex-center secondary-color header-icon" href="./cart.html">
+              <span class="material-icons icon"> shopping_cart </span>
+              <p>Cart</p>
+            </a>
+          </div>
+        </div>
+        <span class="material-icons icon hide-menu menu-logo"> menu </span>
+      </div>
+      <hr class="hr-line header-divider" />
+      <div class="search-bar-container search-bar-block">
+        <div class="search-bar flex">
+          <input class="input-search" type="text" placeholder="Search your favorite brand and products" />
+          <span class="material-icons search-icon flex-center"> search </span>
+        </div>
       </div>
     </div>
-  </body>
+
+    <div id="empty-box"></div>
+
+    <nav class="collape-navbar-container hide-nav">
+      <div class="header-navbar flex justify-between">
+        <h2>magni<span class="secondary-color highlight-letter-header">Z</span>ent</h2>
+        <button class="nav-close-btn"><span class="material-icons icon"> close </span></button>
+
+      </div>
+      <hr class="hr-line">
+      <div class="navbar-item-container secondary-color">
+        <a href="./index.html" class="secondary-color">
+          <div class="navbar-unit flex">
+            <span class="material-icons nav-icon"> home </span>
+            <div class="navbar-unit-title">Home</div>
+          </div>
+        </a>
+        <a href="./productList.html" class="secondary-color">
+          <div class="navbar-unit flex">
+            <span class="material-icons nav-icon"> shopping_cart </span>
+            <div class="navbar-unit-title">Shop Now</div>
+          </div>
+        </a>
+        <div class="hide-mini-desktop">
+          <a href="./login.html" class="secondary-color">
+            <div class="navbar-unit flex">
+              <span class="material-icons nav-icon"> login </span>
+              <div class="navbar-unit-title">Login</div>
+            </div>
+          </a>
+          <a href="./wishlist.html" class="secondary-color">
+            <div class="navbar-unit flex">
+              <span class="material-icons nav-icon"> favorite </span>
+              <div class="navbar-unit-title">Wishlist</div>
+            </div>
+          </a>
+          <a href="./cart.html" class="secondary-color">
+            <div class="navbar-unit flex">
+              <span class="material-icons nav-icon"> shopping_cart </span>
+              <div class="navbar-unit-title">Cart</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-img-container">
+      <img class="hero-bg-img" src="./assets/hero-bg-img.jpg" alt="" />
+      <div class="bg-img-content flex-column flex-center">
+        <h1 class="hero-title"><span class="primary-color hero-segment">S</span>PRING <span
+            class="primary-color hero-segment">S</span>ALE</h1>
+        <p class="hero-sub-title">Upto <span class="price-off-bg">60% off</span> on all the products</p>
+        <a class="shop-now-link" href="./productList.html"><button class="hero-btn shop-now-btn">Shop Now</button></a>
+      </div>
+    </div>
+
+    <div class="prominent-category">
+      <p class="category-header black-color">Prominent Category</p>
+      <div class="underline-header"></div>
+      <div class="category-container">
+        <div class="category-unit flex-center">
+          <img src="./assets/card_camera.jpg" alt="">
+          <p class="category-content">Camera</p>
+        </div>
+        <div class="category-unit flex-center">
+          <img src="./assets/card_img6.jpg" alt="">
+          <p class="category-content">Laptop</p>
+        </div>
+        <div class="category-unit flex-center">
+          <img src="./assets/watch.jpg" alt="">
+          <p class="category-content">Watch</p>
+        </div>
+        <div class="category-unit flex-center">
+          <img src="./assets/tablet.jpg" alt="">
+          <p class="category-content">Tablet</p>
+        </div>
+      </div>
+
+      <div class="top-products-container">
+        <p class="category-header black-color top-product-header">Products of the week</p>
+        <div class="underline-header"></div>
+        <div class="product-container">
+          <div class="product-unit flex-column ">
+            <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
+            <div class="product-unit-header justify-between">
+              <p class="name-product">Product </p>
+              <span class="material-icons wishlist-icon"> favorite </span>
+            </div>
+
+            <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+            <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+            <button class="hero-btn">Add To Cart</button>
+          </div>
+
+          <div class="product-unit flex-column">
+            <img class="img-product justify-center" src="./assets/card_img3.jpg" alt="">
+            <div class="product-unit-header justify-between">
+              <p class="name-product">Product </p>
+              <span class="material-icons wishlist-icon"> favorite </span>
+            </div>
+
+            <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+            <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+            <button class="hero-btn">Add To Cart</button>
+          </div>
+
+          <div class="product-unit flex-column">
+            <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
+            <div class="product-unit-header justify-between">
+              <p class="name-product">Product </p>
+              <span class="material-icons wishlist-icon"> favorite </span>
+            </div>
+
+            <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+            <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+            <button class="hero-btn">Add To Cart</button>
+          </div>
+
+          <div class="product-unit flex-column">
+            <img class="img-product justify-center" src="./assets/card_img5.jpg" alt="">
+            <div class="product-unit-header justify-between">
+              <p class="name-product">Product </p>
+              <span class="material-icons wishlist-icon"> favorite </span>
+            </div>
+
+            <p class="description-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iusto.</p>
+            <p class="price">₹ 549 <span class="price-offer">45% off</span></p>
+            <button class="hero-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cart-footer flex-center flex-column">
+      <p class="">Made with <span class="primary-color footer-symbol"> &lt;/&gt; </span> by <a
+          class="footer-linkedin-link" href="http://www.linkedin.com/in/vishruta-patil-30106b204">Vishruta Patil</a></p>
+      <div class="social-links-container">
+        <ul class="flex social-links-inner-container">
+          <li>
+            <a href="https://github.com/Vishruta-Patil" target="_blank"><i
+                class="fab fa-github footer-social-icon"></i></a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/vishruta-patil-30106b204" target="_blank"><i
+                class="fab fa-linkedin footer-social-icon"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/vishruta_patil" target="_blank"><i
+                class="fab fa-twitter footer-social-icon"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="copywrite-footer">© 2022 magniZent</p>
+
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>

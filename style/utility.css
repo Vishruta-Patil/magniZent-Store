@@ -58,10 +58,10 @@ button {
 }
 
 .hr-line {
-  height: 1px;
+  height: 2px;
   border-width: 0;
   background-color: var(--hr-line);
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
 }
 
 .rg-line {
