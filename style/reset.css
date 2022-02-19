@@ -60,6 +60,7 @@ html {
     grid-template-areas:
       "header header header header header header"
       "menu menu product product product product";
+      
   }
   .header-main-content {
     display: none;
@@ -69,8 +70,10 @@ html {
 @media only screen and (max-width: 500px) {
   .product-list-container {
     grid-template-areas:
-      "header header header header header header"
-      "product product product product product product";
+      "header"
+      "filter-mobile-layout"
+      "product";
+      grid-template-columns: 1fr
   }
   .filter-container {
     display: none;

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>magniZent Store</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style/header.css" />
   <link rel="stylesheet" href="./style/colors.css" />
   <link rel="stylesheet" href="./style/reset.css" />
@@ -125,6 +126,89 @@
       </div>
     </nav>
 
+<!-- filter in mobile view -->
+    <div class="filter-mobile-view">
+      <header class="header-filter-mb flex justify-between align-center">
+        <div class="mb-filter filter-header flex">
+          <h3 class="primary-color">Filters</h3>
+          <p class="secondary-color clear-link">Clear</p>
+        </div>
+        <span class="material-icons filter-dropdown">
+          arrow_drop_down
+          </span>
+          <span class="material-icons filter-dropup hide-nav">
+            arrow_drop_up
+            </span>
+      </header>
+      <section class="filter-mobile-view-container">
+        <div class="filter-mob-container hide-nav">
+          <hr class="rg-line">
+          <div class="mb-filter filter-content">
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title">PRICE</h3>
+              <div class="filter-item align-center">
+                <input type="range" min="1" max="100" value="50">
+              </div>
+            </div>
+    
+            <hr class="rg-line" />
+    
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title secondary-color">CATEGORY</h3>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">Category-1 </label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">Category-2 </label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">Category-3 </label>
+              </div>
+            </div>
+    
+            <hr class="rg-line" />
+    
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title secondary-color">RATING</h3>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">4 Stars & above</label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">3 Stars & above</label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">2 Stars & above</label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">1 Stars & above</label>
+              </div>
+            </div>
+    
+            <hr class="rg-line" />
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title secondary-color">SORT BY</h3>
+              <div class="mb-filter filter-item align-center">
+                <input type="radio">
+                <label for="">Price - Low to High </label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="radio">
+                <label for="">Price - High to Low</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Filter in desktop view -->
     <div class="filter-container">
       <div class="filter-header flex">
         <h3 class="primary-color">Filters</h3>
@@ -197,6 +281,7 @@
 
 
     <div class="product-container">
+      
       <div class="product-unit flex-column">
         <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
         <div class="product-unit-header justify-between">
