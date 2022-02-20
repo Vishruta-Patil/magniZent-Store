@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>magniZent Store</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style/header.css" />
   <link rel="stylesheet" href="./style/colors.css" />
   <link rel="stylesheet" href="./style/reset.css" />
   <link rel="stylesheet" href="./style/utility.css" />
+  <link rel="stylesheet" href="./style/collapseNavbar.css" />
   <link rel="stylesheet" href="./style/productList.css" />
 </head>
 
@@ -18,13 +20,14 @@
   <div class="product-list-container">
     <div class="header-container">
       <div class="header">
-        <div class="logo flex-container flex-center" style="align-items: baseline; gap: 2rem">
-          <span class="material-icons icon hide-menu"> menu </span>
+        <div class="logo" style="align-items: baseline; gap: 2rem">
+
           <a class="primary-color" href="./index.html">
             <h2 class="main-title">
-              magni<span class="bold-main-title">Z</span>ent
+              magni<span class="bold-main-title">Z</span>ent <span class="bold-main-title secondary-color">
             </h2>
           </a>
+
         </div>
 
         <div class="header-main-content">
@@ -47,7 +50,7 @@
           </div>
         </div>
 
-        <div class="icon-container flex">
+        <div class="flex icon-container">
           <div class="icon-unit">
             <a class="flex-column flex-center secondary-color header-icon" href="./login.html">
               <span class="material-icons icon"> login </span>
@@ -67,6 +70,7 @@
             </a>
           </div>
         </div>
+        <span class="material-icons icon hide-menu menu-logo"> menu </span>
       </div>
       <hr class="hr-line header-divider" />
       <div class="search-bar-container search-bar-block">
@@ -77,6 +81,134 @@
       </div>
     </div>
 
+    <div id="empty-box"></div>
+
+    <nav class="collape-navbar-container hide-nav">
+      <div class="header-navbar flex justify-between">
+        <h2>magni<span class="secondary-color highlight-letter-header">Z</span>ent</h2>
+        <button class="nav-close-btn"><span class="material-icons icon"> close </span></button>
+
+      </div>
+      <hr class="hr-line">
+      <div class="navbar-item-container secondary-color">
+        <a href="./index.html" class="secondary-color">
+          <div class="navbar-unit flex">
+            <span class="material-icons nav-icon"> home </span>
+            <div class="navbar-unit-title">Home</div>
+          </div>
+        </a>
+        <a href="./productList.html" class="secondary-color">
+          <div class="navbar-unit flex">
+            <span class="material-icons nav-icon"> shopping_cart </span>
+            <div class="navbar-unit-title">Shop Now</div>
+          </div>
+        </a>
+        <div class="hide-mini-desktop">
+          <a href="./login.html" class="secondary-color">
+            <div class="navbar-unit flex">
+              <span class="material-icons nav-icon"> login </span>
+              <div class="navbar-unit-title">Login</div>
+            </div>
+          </a>
+          <a href="./wishlist.html" class="secondary-color">
+            <div class="navbar-unit flex">
+              <span class="material-icons nav-icon"> favorite </span>
+              <div class="navbar-unit-title">Wishlist</div>
+            </div>
+          </a>
+          <a href="./cart.html" class="secondary-color">
+            <div class="navbar-unit flex">
+              <span class="material-icons nav-icon"> shopping_cart </span>
+              <div class="navbar-unit-title">Cart</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+<!-- filter in mobile view -->
+    <div class="filter-mobile-view">
+      <header class="header-filter-mb flex justify-between align-center">
+        <div class="mb-filter filter-header flex">
+          <h3 class="primary-color">Filters</h3>
+          <p class="secondary-color clear-link">Clear</p>
+        </div>
+        <span class="material-icons filter-dropdown">
+          arrow_drop_down
+          </span>
+          <span class="material-icons filter-dropup hide-nav">
+            arrow_drop_up
+            </span>
+      </header>
+      <section class="filter-mobile-view-container">
+        <div class="filter-mob-container hide-nav">
+          <hr class="rg-line">
+          <div class="mb-filter filter-content">
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title">PRICE</h3>
+              <div class="filter-item align-center">
+                <input type="range" min="1" max="100" value="50">
+              </div>
+            </div>
+    
+            <hr class="rg-line" />
+    
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title secondary-color">CATEGORY</h3>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">Category-1 </label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">Category-2 </label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">Category-3 </label>
+              </div>
+            </div>
+    
+            <hr class="rg-line" />
+    
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title secondary-color">RATING</h3>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">4 Stars & above</label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">3 Stars & above</label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">2 Stars & above</label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="checkbox">
+                <label for="">1 Stars & above</label>
+              </div>
+            </div>
+    
+            <hr class="rg-line" />
+            <div class="filter-inner-content">
+              <h3 class="mb-filter filter-content-title secondary-color">SORT BY</h3>
+              <div class="mb-filter filter-item align-center">
+                <input type="radio">
+                <label for="">Price - Low to High </label>
+              </div>
+              <div class="mb-filter filter-item align-center">
+                <input type="radio">
+                <label for="">Price - High to Low</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Filter in desktop view -->
     <div class="filter-container">
       <div class="filter-header flex">
         <h3 class="primary-color">Filters</h3>
@@ -147,8 +279,8 @@
       </div>
     </div>
 
-
     <div class="product-container">
+      
       <div class="product-unit flex-column">
         <img class="img-product justify-center" src="./assets/card_camera.jpg" alt="">
         <div class="product-unit-header justify-between">
@@ -242,6 +374,8 @@
 
   </div>
   </div>
+  
+  <script src="./index.js"></script>
 </body>
 
 </html>
