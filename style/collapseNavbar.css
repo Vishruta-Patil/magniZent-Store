@@ -80,12 +80,7 @@
   .display-nav {
       display: block;
   }
-
-  .abc {
-      background-color: transparent;
-      display: none;
-  }
-
+  
   /* .collape-navbar-container.hide-nav {
     transform: translateX(0%);
   }

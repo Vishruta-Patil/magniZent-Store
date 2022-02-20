@@ -1,7 +1,8 @@
 .filter-container {
   grid-area: menu;
-  /* background-color: red; */
   margin: 3rem;
+  position: sticky;
+  top: 1rem
 }
 
 .filter-header {
