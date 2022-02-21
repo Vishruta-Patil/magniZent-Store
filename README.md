@@ -11,3 +11,7 @@
 - [Cart Management](https://magnizent-store.netlify.app/cart.html)
 - [Signup Page](https://magnizent-store.netlify.app/signup.html)
 - [Login Page](https://magnizent-store.netlify.app/login.html)
+
+## Preview
+
+![Demo](./assets/magniZent_Store.gif)
